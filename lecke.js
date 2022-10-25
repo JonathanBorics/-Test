@@ -80,13 +80,14 @@ const korhaz = {
     alapitas: 1970,
     igazgato: "Roxi",
 
-    doktorok: doktorok
-    paciensek: paciensek
+    doktorok: doktorok,
+
+    paciensek: paciensek,
 
 }
 
 
-console.log(korhaz.doktorok);
+console.log(korhaz.paciensek);
 
 
 
