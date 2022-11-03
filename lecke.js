@@ -56,18 +56,25 @@ const doktor1 = {
     nev: "Ivana",
     kor: 21,
     hajszin: "fekete",
+    paciensek: paciens6, paciens7
+
 };
 
 const doktor2 = {
     nev: "Fanni",
     kor: 22,
     hajszin: "szoke",
+
+    paciensek: paciens1, paciens2
+
 };
 
 const doktor3 = {
     nev: "Karolina",
     kor: 47,
     hajszin: "Szokes-barna",
+    paciensek: paciens3, paciens5
+
 };
 const doktorok = [
     doktor1, doktor2, doktor3
