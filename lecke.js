@@ -87,14 +87,14 @@ const korhaz = {
     alapitas: 1970,
     igazgato: "Roxi",
 
-    doktorok: doktorok,
+    doktorok: [doktor1, doktor2, doktor3],
 
-    paciensek: paciensek,
+    paciensek: [paciens1, paciens2, paciens3, paciens4, paciens5, paciens6, paciens7],
 
 };
 
 module.exports = korhaz;
-console.log();
+console.log(korhaz.doktorok[1].paciens2.kor);
 
 
 
