@@ -24,7 +24,7 @@ function fincs(list) {
 }
 console.log(fincs(list));*/
 
-let a = {};
+//let a = {};
 let c = [
   { nev: "karcsi", kor: 12 },
   { nev: "sziszi", kor: 23 },
@@ -55,14 +55,15 @@ let b = [
     kor: 34000,
   },
 ];
-let v = {};
+//let v = {};
 
 function ajde(konyvtar, lista) {
   for (let i = 0; i < lista.length; i++) konyvtar[lista[i].nev] = lista[i].kor;
+
   //for (let i = 0; i < cica.length; i++)
   //  konyvtar[cica[i].nev] = cica[i].kor;
 
   return konyvtar;
 }
 
-console.log("eredmeny", ajde(a, b));
+console.log("eredmeny", ajde(b, c));

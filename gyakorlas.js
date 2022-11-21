@@ -145,7 +145,14 @@ const Iskola = {
     emberek6,
     emberek7,
     emberek8,
+    tanar1,
+    tanar2,
+    tanar3,
+    tanar4,
   ],
   tanarlista: [tanar1, tanar2, tanar3, tanar4],
 };
-console.log(Iskola.tanarlista[1].osztalylista[1].kor);
+
+module.exports = Iskola;
+
+console.log(Iskola.osztalylista);
