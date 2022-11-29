@@ -1,13 +1,18 @@
 const importalunk = require("./alkoholizmus");
 
-describe("tesztelunk valami", () => {
+/*describe("tesztelunk valami", () => {
   it("szoveg", () => {
-    expect(importalunk.alkohol(2)).toEqual(true);
+    expect(importalunk.drug(2)).toEqual(true);
   });
 });
 
-describe("haittas", () => {
+describe("ifDrunk", () => {
   it("ittas kene", () => {
-    expect(importalunk.haittas(0.6)).toEqual("ittas");
+    expect(importalunk.ifDrug(0.6)).toEqual("ITTAS");
+  });
+});*/
+describe("action", () => {
+  it("RESZEG", () => {
+    expect(importalunk.action(importalunk.RESZEG)).toEqual("takarodjon aludni");
   });
 });
