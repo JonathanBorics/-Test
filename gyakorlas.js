@@ -112,7 +112,7 @@ const osztalylista = [
   emberek7,
   emberek8,
 ];
-const osztaly = {
+/*const osztaly = {
   osztalylista: [
     emberek1,
     emberek2,
@@ -123,7 +123,7 @@ const osztaly = {
     emberek7,
     emberek8,
   ],
-};
+};*/
 // Tanarok listaja
 const tanarlista = [tanar1, tanar2, tanar3, tanar4];
 const tanarok = {
@@ -154,5 +154,3 @@ const Iskola = {
 };
 
 module.exports = Iskola;
-
-console.log(Iskola.osztalylista);

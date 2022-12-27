@@ -1,26 +1,20 @@
-/*const a = 5;
+const a = 5;
 const b = 3;
 
 function osszeadas(e, v) {
-
-    return e - v;
-
+  return e - v;
 }
 
-
-
-
-console.log(osszeadas(a, b)); */
+console.log(osszeadas(a, b));
 
 //function ae(b) {
 //  return "boldog szulcsit" + b;
 //};
 //console.log(ae("  peti "));
-
-/*const list = ['Rizs', 'tojas', 'hus'];
+/*
+const list = ["Rizs", "tojas", "hus"];
 function fincs(list) {
-    return "kajak amit szeretek " + list;
-
+  return "kajak amit szeretek " + list;
 }
 console.log(fincs(list));*/
 
@@ -66,4 +60,4 @@ function ajde(konyvtar, lista) {
   return konyvtar;
 }
 
-console.log("eredmeny", ajde(b, c));
+console.log("eredmeny", ajde());

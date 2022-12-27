@@ -98,4 +98,10 @@ const korhazBajmok = {
 //m
 module.exports = korhazBajmok;
 
-console.log(korhazBajmok.doktorok[0]);
+//console.log(korhazBajmok.doktorok[0]);
+
+const adat = [];
+for (let i = 0; i < korhazBajmok.doktorok.length; i++) {
+  adat.push(...korhazBajmok.doktorok[i].paciensek);
+  console.log("hahoooooo", adat.length);
+}

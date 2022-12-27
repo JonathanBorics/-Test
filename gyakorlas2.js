@@ -9,7 +9,7 @@ const pacienseklistaja = [];
 for (let i = 0; i < korhazBajmok.doktorok.length; i++) {
   pacienseklistaja.push(...korhazBajmok.doktorok[i].paciensek);
 }
-
+console.log();
 const medicine = [];
 
 const Brufen = "brufen ";
