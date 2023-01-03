@@ -23,6 +23,19 @@ app.get("/:id", (req, res, next) => {
   }
   res.send("faild");
 });
+app.put("/", (req, res, next) => {
+  const user = req.body;
+  if (user) {
+    database.push(user);
+    fs.writeFile("database.json", JSON.stringify(database), (err) => {
+      if (err) {
+        console.log("jaj de rossz nem mukodik ");
+      }
+      console.log("sikerult hozza adva", database);
+      res.send("success");
+    });
+  }
+});
 
 app.post("/", (req, res, next) => {
   const user = req.body;
@@ -37,10 +50,6 @@ app.post("/", (req, res, next) => {
     });
   }
 });
-app.delete('/', (req, res, next)=>{
-  if()
-  
-})
 
 app.listen(app.get("port"), () => {
   console.info(`Server listen on port ${app.get("port")}`);

@@ -1,3 +1,4 @@
+const database = require("./database.json");
 const readline = require("readline");
 const axios = require("axios");
 const rl = readline.createInterface({
@@ -17,6 +18,40 @@ const authQuestion = () => {
     });
   });
 };
+const valtoztatas = (answer) => {
+  return new Promise((resolve, reject) => {
+    rl.question("szeretne e valtoztatni ? ", async (answer) => {
+      if (answer === "igen") {
+        console.log(database);
+        resolve(true);
+      } else {
+        resolve(false);
+      }
+    });
+  });
+};
+const changeStudent = (answer) => {
+  return new Promise((resolve, reject) => {
+    rl.question(
+      "irjabe az ID-t aminek a nevet megvaltoztatjuk ",
+      async (answer) => {
+        for (let i = 0; i < database.length; i++) {
+          if (database[i].id == answer) {
+          }
+        }
+        //const response = await axios.put(`http://localhost:3000/`, {});
+
+        if (database.name === answer) {
+          console.log("mukodik ", answer, database);
+          resolve(true);
+        } else {
+          resolve(false);
+        }
+      }
+    );
+  });
+};
+
 const studentQuestion = (answer) => {
   return new Promise((resolve, reject) => {
     rl.question("van e uj diak? ", async (answer) => {
@@ -28,6 +63,7 @@ const studentQuestion = (answer) => {
     });
   });
 };
+
 const newstudentQuestion = (answer) => {
   return new Promise((resolve, reject) => {
     rl.question("irja be a  diak nevet ? ", async (answer) => {
@@ -47,9 +83,11 @@ const newstudentQuestion = (answer) => {
 async function main() {
   const teacher = await authQuestion();
   if (teacher) {
-    const newstudent = await studentQuestion();
-    if (newstudent) {
-      await newstudentQuestion();
+    const valtoztat = await valtoztatas();
+    if (valtoztat) {
+      const change = await changeStudent();
+      if (change) {
+      }
     }
   }
 
