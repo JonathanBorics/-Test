@@ -33,20 +33,16 @@ const valtoztatas = (answer) => {
 const changeStudent = (answer) => {
   return new Promise((resolve, reject) => {
     rl.question(
-      "irjabe az ID-t aminek a nevet megvaltoztatjuk ",
+      "irja be az ID-t aminek a nevet megvaltoztatjuk ",
       async (answer) => {
         for (let i = 0; i < database.length; i++) {
           if (database[i].id == answer) {
+            resolve(true);
+          } else {
+            resolve(false);
           }
         }
         //const response = await axios.put(`http://localhost:3000/`, {});
-
-        if (database.name === answer) {
-          console.log("mukodik ", answer, database);
-          resolve(true);
-        } else {
-          resolve(false);
-        }
       }
     );
   });

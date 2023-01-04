@@ -26,7 +26,7 @@ app.get("/:id", (req, res, next) => {
 app.put("/", (req, res, next) => {
   const user = req.body;
   if (user) {
-    database.push(user);
+    database.map(user);
     fs.writeFile("database.json", JSON.stringify(database), (err) => {
       if (err) {
         console.log("jaj de rossz nem mukodik ");
